@@ -1,0 +1,174 @@
+.header {
+  padding: 2.8em 0;
+}
+.header .header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+.header .header-logo .logo {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+.header .header-logo .header-menu-content {
+  display: flex;
+  align-items: center;
+}
+.header .header-logo .header-menu-content .menu-icon {
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  outline: none;
+  background-image: url(../../images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+}
+
+.hero .hero-description {
+  box-sizing: border-box;
+  text-align: center;
+}
+.hero .hero-img-intro {
+  max-width: 100%;
+}
+
+.menu {
+  border: 2px solid red;
+  position: fixed;
+  display: block;
+  top: -101%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(to top, var(--very-Dark-Blue) -15%, transparent 100%);
+}
+.menu .menu-content {
+  padding: 0 1.4em;
+  padding-top: 5.6em;
+}
+.menu ul {
+  padding: 0;
+  background: var(--vary-Light-Gray);
+  border-radius: 5px;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  display: block;
+  padding: 0.8em 0;
+  text-decoration: none;
+  color: var(--very-Dark-blue);
+  font-weight: 700;
+}
+.menu li:first-of-type {
+  padding-top: 0.5em;
+}
+.menu li:last-of-type {
+  padding-bottom: 0.5em;
+}
+
+#menu.active {
+  top: 0;
+}
+
+.different {
+  border: 1px solid red;
+  margin-top: 6.5em;
+  text-align: center;
+}
+
+:root {
+  --bright-Red: hsl(12, 88%, 59%);
+  --dark-Blue: hsl(228, 39%, 23%);
+  --dark--Grayish-Blue: hsl(227, 12%, 61%);
+  --very-Dark-Blue: hsl(233, 12%, 13%);
+  --very-Pale-Red: hsl(12, 100%, 96%);
+  --vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Be Vietnam", sans-serif;
+  color: var(--dark-Blue);
+}
+
+.wrapper {
+  padding: 0 1.4em;
+}
+
+.wrapper-min {
+  padding: 0 1.5em 0 1em;
+}
+
+.u-title {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 700;
+}
+
+.u-paragraph {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0 2.7em;
+  line-height: 2;
+  color: var(--dark--Grayish-Blue);
+  margin-bottom: 2em;
+}
+
+.number {
+  padding: 0 1.9em 0 0;
+  text-align: left;
+}
+
+.u-sub {
+  font-size: 1.91em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.u-track {
+  text-align: left;
+  background: pink;
+  padding: 0.68em 0;
+  border-radius: 15px 0 0 15px;
+  padding-left: 2.8em;
+  position: relative;
+}
+
+.u-track::before {
+  content: "01";
+  background: red;
+  padding: 0.68em 1.2em;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.u-button {
+  border: none;
+  outline: none;
+  background: var(--bright-Red);
+  color: var(--vary-Light-Gray);
+  padding: 1em 1.9em;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 1px 1em 1.2em -0.5em #f25f3a;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

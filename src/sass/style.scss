@@ -1,0 +1,96 @@
+@import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
+@import "./different.scss";
+:root {
+    // ## Colors
+    // ### Primary
+    --bright-Red: hsl(12, 88%, 59%);
+    --dark-Blue: hsl(228, 39%, 23%);
+    // ### Neutral
+    --dark--Grayish-Blue: hsl(227, 12%, 61%);
+    --very-Dark-Blue: hsl(233, 12%, 13%);
+    --very-Pale-Red: hsl(12, 100%, 96%);
+    --vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Be Vietnam', sans-serif;
+    color: var(--dark-Blue);
+}
+
+.wrapper {
+    padding: 0 1.4em;
+    // border: 1px solid blue;
+}
+
+.wrapper-min {
+    padding: 0 1.5em 0 1em;
+    // border: 1px solid blue;
+}
+
+.u-title {
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 700;
+}
+
+.u-paragraph {
+    text-align: center;
+    font-size: .8em;
+    padding: 0 2.7em;
+    line-height: 2;
+    color: var(--dark--Grayish-Blue);
+    margin-bottom: 2em;
+}
+
+.number {
+    padding: 0 1.9em 0 0;
+    text-align: left;
+}
+
+.u-sub {
+    font-size: 1.91em;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.u-track {
+    text-align: left;
+    background: pink;
+    padding: 0.68em 0;
+    border-radius: 15px 0 0 15px;
+    padding-left: 2.8em;
+    position: relative;
+}
+
+.u-track::before {
+    content: '01';
+    background: red;
+    padding: 0.68em 1.2em;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.u-button {
+    border: none;
+    outline: none;
+    background: var(--bright-Red);
+    color: var(--vary-Light-Gray);
+    padding: 1em 1.9em;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 1px 1em 1.2em -0.5em hsl(12, 88%, 59%);
+}
+
+.is-hidden {
+    display: none;
+}
