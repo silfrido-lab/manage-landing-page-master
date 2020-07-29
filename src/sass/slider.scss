@@ -1,0 +1,43 @@
+.slider {
+    border: 1px solid red;
+    margin-top: 5em;
+    text-align: center;
+    .slider-card {
+        background: var(--vary-Light-Gray);
+        position: relative;
+        border-radius: 4px;
+        padding: 2em 0;
+        border: 1px solid red;
+        img {
+            width: 4.5em;
+            height: 4.5em;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: -2.25em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        // .u-name {
+        //     margin-top: 1.75em;
+        //     border: 1px solid red;
+        // }
+        // .u-paragraph {
+        //     border: 1px solid red;
+        //     margin-bottom: 2em;
+        // }
+    }
+    .glider-dots {
+        // background: transparent;
+        .glider-dot {
+            border: 1px solid red;
+            background: transparent;
+        }
+        .glider-dot.active {
+            background: red;
+        }
+    }
+    .glider {
+        overflow-y: scroll;
+    }
+}

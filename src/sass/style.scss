@@ -2,6 +2,7 @@
 @import "./hero.scss";
 @import "./menu.scss";
 @import "./different.scss";
+@import "./slider.scss";
 :root {
     // ## Colors
     // ### Primary
@@ -31,6 +32,13 @@ body {
 .wrapper-min {
     padding: 0 1.5em 0 1em;
     // border: 1px solid blue;
+}
+
+.wrapper-min {
+    padding-right: 0;
+    .u-track {
+        padding-right: 0;
+    }
 }
 
 .u-title {
@@ -63,23 +71,29 @@ body {
 
 .u-track {
     text-align: left;
-    background: pink;
-    padding: 0.68em 0;
-    border-radius: 15px 0 0 15px;
-    padding-left: 2.8em;
-    position: relative;
+    font-size: .9em;
+    background: var(--very-Pale-Red);
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 0;
+    span {
+        display: inline-block;
+        background-color: var(--bright-Red);
+        padding: .68em 1.6em;
+        border-radius: 50px;
+        margin-right: 1em;
+        color: var(--vary-Light-Gray);
+    }
 }
 
-.u-track::before {
-    content: '01';
-    background: red;
-    padding: 0.68em 1.2em;
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
+// .u-track::before {
+//     content: '01';
+//     background: red;
+//     padding: 0.68em 1.2em;
+//     border-radius: 20px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
 .u-button {
     border: none;
     outline: none;

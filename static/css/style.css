@@ -78,9 +78,41 @@
 }
 
 .different {
-  border: 1px solid red;
   margin-top: 6.5em;
   text-align: center;
+}
+
+.slider {
+  border: 1px solid red;
+  margin-top: 5em;
+  text-align: center;
+}
+.slider .slider-card {
+  background: var(--vary-Light-Gray);
+  position: relative;
+  border-radius: 4px;
+  padding: 2em 0;
+  border: 1px solid red;
+}
+.slider .slider-card img {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -2.25em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider .glider-dots .glider-dot {
+  border: 1px solid red;
+  background: transparent;
+}
+.slider .glider-dots .glider-dot.active {
+  background: red;
+}
+.slider .glider {
+  overflow-y: scroll;
 }
 
 :root {
@@ -107,6 +139,13 @@ body {
 
 .wrapper-min {
   padding: 0 1.5em 0 1em;
+}
+
+.wrapper-min {
+  padding-right: 0;
+}
+.wrapper-min .u-track {
+  padding-right: 0;
 }
 
 .u-title {
@@ -139,21 +178,18 @@ body {
 
 .u-track {
   text-align: left;
-  background: pink;
-  padding: 0.68em 0;
-  border-radius: 15px 0 0 15px;
-  padding-left: 2.8em;
-  position: relative;
+  font-size: 0.9em;
+  background: var(--very-Pale-Red);
+  border-radius: 20px 0 0 20px;
+  margin-bottom: 0;
 }
-
-.u-track::before {
-  content: "01";
-  background: red;
-  padding: 0.68em 1.2em;
-  border-radius: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
+.u-track span {
+  display: inline-block;
+  background-color: var(--bright-Red);
+  padding: 0.68em 1.6em;
+  border-radius: 50px;
+  margin-right: 1em;
+  color: var(--vary-Light-Gray);
 }
 
 .u-button {

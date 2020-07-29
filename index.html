@@ -7,6 +7,8 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Manage landing page</title>
@@ -78,21 +80,21 @@
         <div class="wrapper-min">
             <div class="different-items">
                 <div class="item">
-                    <h4 class="u-track">
+                    <h5 class="u-track wrapper-title">
                         <span>01</span> Track company-wide progress
-                    </h4>
+                    </h5>
                     <p class="u-paragraph number">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
                 </div>
                 <div class="item">
-                    <h4 class="u-track">
+                    <h5 class="u-track wrapper-title">
                         <span>02</span> Advanced built-in reports
-                    </h4>
+                    </h5>
                     <p class="u-paragraph number">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
                 </div>
                 <div class="item">
-                    <h4 class="u-track">
+                    <h5 class="u-track wrapper-title">
                         <span>03</span> Everything you need in one place
-                    </h4>
+                    </h5>
                     <p class="u-paragraph number">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
                 </div>
             </div>
@@ -103,29 +105,33 @@
         <div class="wrapper">
             <h2 class="u-sub">What they’ve said</h2>
             <!-- slider-1 -->
-            <div class="slider-card">
-                <img src="images/avatar-anisha.png" alt="avatar ali">
-                <p class="u-name">Anisha Li</p>
-                <p class="u-paragraph">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            <div class="slider-list">
+                <div class="slider-card">
+                    <img src="images/avatar-anisha.png" alt="avatar ali">
+                    <p class="u-name">Anisha Li</p>
+                    <p class="u-paragraph">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+                <!-- slider-2 -->
+                <div class="slider-card">
+                    <img src="images/avatar-ali.png" alt="avatar ali">
+                    <p class="u-name">Ali Bravo</p>
+                    <p class="u-paragraph">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+                </div>
+                <!-- slider-3 -->
+                <div class="slider-card">
+                    <img src="images/avatar-richard.png" alt="avatar">
+                    <p class="u-name">Richard Watts</p>
+                    <p class="u-paragraph">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!” </p>
+                </div>
+                <!-- slider-4 -->
+                <div class="slider-card">
+                    <img src="images/avatar-shanai.png" alt="avatar ali">
+                    <p class="u-name">Shanai Gough</p>
+                    <p class="u-paragraph"> “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+                </div>
             </div>
-            <!-- slider-2 -->
-            <div class="slider-card">
-                <img src="images/avatar-ali.png" alt="avatar ali">
-                <p class="u-name">Ali Bravo</p>
-                <p class="u-paragraph">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
-            </div>
-            <!-- slider-3 -->
-            <div class="slider-card">
-                <img src="images/avatar-richard.png" alt="avatar">
-                <p class="u-name">Richard Watts</p>
-                <p class="u-paragraph">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!” </p>
-            </div>
-            <!-- slider-4 -->
-            <div class="slider-card">
-                <img src="images/avatar-shanai.png" alt="avatar ali">
-                <p class="u-name">Shanai Gough</p>
-                <p class="u-paragraph"> “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-            </div>
+            <div role="tablist" class="slider-indicator"></div>
+
             <button class="u-button">Get Started</button>
         </div>
     </section>
@@ -181,6 +187,9 @@
             <p><small>Copyright 2020. All Rights Reserved</small></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
