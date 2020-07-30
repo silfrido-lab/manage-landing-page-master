@@ -3,6 +3,8 @@
 @import "./menu.scss";
 @import "./different.scss";
 @import "./slider.scss";
+@import "./simplify.scss";
+@import "./footer.scss";
 :root {
     // ## Colors
     // ### Primary
@@ -78,9 +80,9 @@ body {
     span {
         display: inline-block;
         background-color: var(--bright-Red);
-        padding: .68em 1.6em;
+        padding: .68em 1.5em;
         border-radius: 50px;
-        margin-right: 1em;
+        margin-right: .5em;
         color: var(--vary-Light-Gray);
     }
 }

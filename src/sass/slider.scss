@@ -1,13 +1,14 @@
 .slider {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin-top: 5em;
     text-align: center;
+    margin-bottom: 2.5em;
     .slider-card {
+        margin-top: 2.4em;
         background: var(--vary-Light-Gray);
         position: relative;
         border-radius: 4px;
-        padding: 2em 0;
-        border: 1px solid red;
+        padding: 2em 0 0 0;
         img {
             width: 4.5em;
             height: 4.5em;
@@ -18,26 +19,22 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        // .u-name {
-        //     margin-top: 1.75em;
-        //     border: 1px solid red;
-        // }
-        // .u-paragraph {
-        //     border: 1px solid red;
-        //     margin-bottom: 2em;
-        // }
     }
     .glider-dots {
-        // background: transparent;
         .glider-dot {
-            border: 1px solid red;
+            margin-top: 1.75em;
+            margin-bottom: 2.8em;
+            border: 1px solid var(--bright-Red);
             background: transparent;
         }
         .glider-dot.active {
-            background: red;
+            background: var(--bright-Red);
         }
     }
     .glider {
         overflow-y: scroll;
+    }
+    .slider-list {
+        overflow: hidden;
     }
 }

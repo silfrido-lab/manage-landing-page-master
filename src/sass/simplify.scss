@@ -1,0 +1,19 @@
+.simplify {
+    height: 25em;
+    background: var(--bright-Red);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .u-sub {
+        // padding-top: 6.4em;
+        font-size: 2.5em;
+        color: var(--vary-Light-Gray);
+    }
+    .u-button {
+        // margin-bottom: 5.6em;
+        background: var(--vary-Light-Gray);
+        color: var(--dark-Blue);
+        box-shadow: none;
+    }
+}
