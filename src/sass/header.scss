@@ -1,6 +1,9 @@
 .header {
     padding: 2.8em 0;
     // border: 1px solid red;
+    position: sticky;
+    top: 0;
+    background-color: white;
     .header-logo {
         display: flex;
         justify-content: space-between;
@@ -19,11 +22,24 @@
                 border: none;
                 user-select: none;
                 outline: none;
-                background-image: url(../../images/icon-hamburger.svg);
-                background-repeat: no-repeat;
-                background-position: center;
+                // background-image: url(../../images/icon-hamburger.svg);
+                // background-repeat: no-repeat;
+                // background-position: center;
                 height: 30px;
-                width: 30px;
+                // width: 30px;
+                z-index: 999;
+                #icon-hamburguer {
+                    display: block;
+                }
+                #icon-hamburguer.active {
+                    display: none;
+                }
+                #icon-close {
+                    display: none;
+                }
+                #icon-close.active {
+                    display: block;
+                }
             }
         }
     }

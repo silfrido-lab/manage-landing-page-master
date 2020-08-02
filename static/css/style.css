@@ -1,5 +1,8 @@
 .header {
   padding: 2.8em 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 .header .header-logo {
   display: flex;
@@ -19,11 +22,20 @@
   border: none;
   user-select: none;
   outline: none;
-  background-image: url(../../images/icon-hamburger.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   height: 30px;
-  width: 30px;
+  z-index: 999;
+}
+.header .header-logo .header-menu-content .menu-icon #icon-hamburguer {
+  display: block;
+}
+.header .header-logo .header-menu-content .menu-icon #icon-hamburguer.active {
+  display: none;
+}
+.header .header-logo .header-menu-content .menu-icon #icon-close {
+  display: none;
+}
+.header .header-logo .header-menu-content .menu-icon #icon-close.active {
+  display: block;
 }
 
 .hero .hero-description {
@@ -113,8 +125,8 @@
 .slider .glider {
   overflow-y: scroll;
 }
-.slider .slider-list {
-  overflow: hidden;
+.slider .slider-list::-webkit-scrollbar {
+  display: none;
 }
 
 .simplify {
@@ -162,7 +174,7 @@
 .footer .footer-grid .footer-nav-left ul {
   padding: 0;
   display: grid;
-  justify-content: center;
+  margin-left: 2em;
 }
 .footer .footer-grid .footer-nav-right ul li,
 .footer .footer-grid .footer-nav-left ul li {

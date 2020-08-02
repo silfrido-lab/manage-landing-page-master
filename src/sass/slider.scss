@@ -34,7 +34,7 @@
     .glider {
         overflow-y: scroll;
     }
-    .slider-list {
-        overflow: hidden;
+    .slider-list::-webkit-scrollbar {
+        display: none;
     }
 }

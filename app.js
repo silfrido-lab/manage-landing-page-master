@@ -30,3 +30,11 @@ window.addEventListener('load', function() {
         }]
     });
 });
+
+const button = document.querySelector('#button');
+button.addEventListener('click', function() {
+    console.log('click');
+    document.getElementById('icon-hamburguer').classList.toggle('active');
+    document.getElementById('icon-close').classList.toggle('active')
+    document.getElementById('menu').classList.toggle('active')
+});
