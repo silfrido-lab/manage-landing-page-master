@@ -4,8 +4,11 @@
         box-sizing: border-box;
         text-align: center;
     }
-    .hero-img-intro {
-        max-width: 100%;
-        // border: 1px solid red;
+    .hero-image {
+        text-align: center;
+        .hero-img-intro {
+            max-width: 100%;
+            // border: 1px solid red;
+        }
     }
 }

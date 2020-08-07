@@ -42,7 +42,10 @@
   box-sizing: border-box;
   text-align: center;
 }
-.hero .hero-img-intro {
+.hero .hero-image {
+  text-align: center;
+}
+.hero .hero-image .hero-img-intro {
   max-width: 100%;
 }
 
@@ -127,6 +130,9 @@
 }
 .slider .slider-list::-webkit-scrollbar {
   display: none;
+}
+.slider .slider-list {
+  z-index: -1;
 }
 
 .simplify {

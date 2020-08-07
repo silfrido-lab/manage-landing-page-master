@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
         slidesToScroll: 1,
         scrollLock: true,
         dots: '.slider-indicator',
-        duration: 0.15,
+        autoplay: 0.15,
 
         responsive: [{
             // screens greater than >= 775px
@@ -25,12 +25,30 @@ window.addEventListener('load', function() {
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 itemWidth: 150,
-                duration: 0.15
+                duration: 1000
             }
         }]
     });
 });
 
+//autoplay del slider
+// var input = document.querySelector('#options-autoplay-input')
+
+// var glide = new Glide('#options-autoplay', {
+//     autoplay: input.value,
+//     hoverpause: false,
+//     perView: 3
+// })
+
+// input.addEventListener('input', function(event) {
+//     glide.update({
+//         autoplay: (event.target.value != 0) ? event.target.value : false
+//     })
+// })
+
+// glide.mount()
+
+//cambio de menu
 const button = document.querySelector('#button');
 button.addEventListener('click', function() {
     console.log('click');

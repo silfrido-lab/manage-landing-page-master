@@ -37,4 +37,7 @@
     .slider-list::-webkit-scrollbar {
         display: none;
     }
+    .slider-list {
+        z-index: -1;
+    }
 }
