@@ -12,3 +12,34 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "description image";
+        align-items: center;
+    }
+    .hero {
+        margin-top: 3.75em;
+        margin-bottom: .625em;
+        .hero-description {
+            grid-area: description;
+            text-align: left;
+            max-width: 27.3em;
+            .u-title {
+                text-align: left;
+                font-size: 3em;
+            }
+            .u-paragraph {
+                text-align: left;
+                padding-left: 0;
+                font-size: 1.1em;
+            }
+        }
+        .hero-image {
+            border: 1px solid red;
+            grid-area: image;
+        }
+    }
+}

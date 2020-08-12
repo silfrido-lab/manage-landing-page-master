@@ -49,6 +49,37 @@
   max-width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description image";
+    align-items: center;
+  }
+
+  .hero {
+    margin-top: 3.75em;
+    margin-bottom: 0.625em;
+  }
+  .hero .hero-description {
+    grid-area: description;
+    text-align: left;
+    max-width: 27.3em;
+  }
+  .hero .hero-description .u-title {
+    text-align: left;
+    font-size: 3em;
+  }
+  .hero .hero-description .u-paragraph {
+    text-align: left;
+    padding-left: 0;
+    font-size: 1.1em;
+  }
+  .hero .hero-image {
+    border: 1px solid red;
+    grid-area: image;
+  }
+}
 .menu {
   position: fixed;
   display: block;
@@ -93,7 +124,66 @@
   margin-top: 6.5em;
   text-align: center;
 }
+.different .item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.different .u-track {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-right: -25px;
+  margin-left: -20px;
+  border-radius: 0;
+  padding-left: 2em;
+}
+.different .u-paragraph {
+  grid-column: 1/span2;
+}
+.different span {
+  background: var(--bright-Red);
+  border-radius: 20px 20px 20px 20px;
+  color: white;
+  font-weight: 400;
+  display: grid;
+  place-items: center;
+  padding: 0.5em 1.5em;
+  z-index: 1;
+}
 
+@media screen and (min-width: 1024px) {
+  .different-grid {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .different-grid .different-content {
+    max-width: 27.3em;
+    text-align: left;
+    padding-left: 0;
+  }
+  .different-grid .u-paragraph {
+    padding-left: 0;
+    text-align: left;
+    font-size: 1em;
+  }
+  .different-grid .different-items .item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 1.75em;
+  }
+  .different-grid .different-items .item .u-track {
+    margin: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    padding-left: 0;
+  }
+  .different-grid .different-items .item .u-paragraph {
+    grid-column: 2/4;
+  }
+}
 .slider {
   margin-top: 5em;
   text-align: center;
@@ -241,6 +331,8 @@ body {
 
 .wrapper {
   padding: 0 1.4em;
+  max-width: 1111px;
+  margin: 0 auto;
 }
 
 .wrapper-min {
