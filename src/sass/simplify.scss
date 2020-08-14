@@ -17,3 +17,17 @@
         box-shadow: none;
     }
 }
+
+@media screen and (min-width:1024px) {
+    .simplify {
+        height: 13.75em;
+        .simplify-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center end;
+        }
+        .u-sub {
+            text-align: left;
+        }
+    }
+}

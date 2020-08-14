@@ -9,7 +9,7 @@
         margin: 0;
         display: flex;
         align-items: center;
-        margin-right: -25px;
+        margin-right: -21px;
         margin-left: -20px;
         border-radius: 0;
         padding-left: 2em;
@@ -31,7 +31,6 @@
 
 @media screen and (min-width: 1024px) {
     .different-grid {
-        border: 1px solid blue;
         display: grid;
         grid-template-columns: 1fr 1fr;
         .different-content {
