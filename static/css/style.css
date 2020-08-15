@@ -309,6 +309,10 @@
   width: 2.18em;
   height: 2.18em;
 }
+.footer .footer-logo {
+  text-align: center;
+  margin-top: 3.43em;
+}
 .footer .footer-pie {
   text-align: center;
   margin-top: 3.4em;
@@ -324,10 +328,55 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .grid-foo {
+  .footer .grid-foo {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 100px 100px 50px;
+    grid-template-areas: "logo      menu     menu     form" "social         menu     menu     pie";
+  }
+  .footer .footer-logo {
+    display: grid;
+    grid-area: logo;
+    justify-content: start;
+  }
+  .footer .footer-form {
+    grid-area: form;
+  }
+  .footer .footer-grid {
+    grid-area: menu;
+    margin: 0;
+    display: grid;
+    align-items: flex-start;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50px);
+  }
+  .footer .footer-grid .footer-nav-left ul,
+.footer .footer-grid .footer-nav-right ul {
+    margin-top: 0;
+  }
+  .footer .footer-social {
+    display: grid;
+    align-items: end;
+    grid-area: social;
+  }
+  .footer .footer-social ul {
+    gap: 12px;
+    justify-content: start;
+    margin: 0;
+  }
+  .footer .footer-social ul li a img {
+    width: 22px;
+    height: 22px;
+  }
+  .footer .footer-pie {
+    display: grid;
+    align-items: end;
+    grid-area: pie;
+    margin-top: 0;
+  }
+  .footer .footer-pie p {
+    padding: 0;
   }
 }
 :root {
